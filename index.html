@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhys Naden | Film Maker | Photographer</title>
+
+    <!-- meta tags -->
+    <meta name="description" content="Manchester Based Film Maker, Editor, Photorgrapher">
+    <meta name="keywords" content="film, photography, edit, editing, freelance, vimeo">
+    <meta name="author" content="Paul Worthington">
+    
+    <!-- own css -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="outer-header">
+            <div class="home">
+                <p><a href="{{ url_for('index') }}">RN</a></p>
+            </div>
+            
+            <!--each line of the menu burger icon-->
+            <div class="inner-header" id="burgerIcon" onclick="changeMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        
+        <nav >
+            <div class="navbox" id="navContainer">
+                <div class="navigation-content">
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">Home<span>></span></a></li>
+                        <li><a href="{{ url_for('booking') }}">Filmography<span>></span></a></li>
+                        <li><a href="{{ url_for('menu') }}">Photography<span>></span></a></li>
+                        <li><a href="{{ url_for('opening') }}">About<span>></span></a></li>
+                        <li><a href="{{ url_for('news') }}">Contact<span>></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="under-heading"></div>
+    </header>
+
+    <main>
+        <div class="title container">
+            <div class="title-inner">    
+                <h1>Rhys Naden</h1>
+                <p>film maker</p>
+                <p>editor</p>
+                <p>photographer</p>
+            </div>
+            <div class="aside-line"></div>
+        <div>
+
+        <div class="img">
+
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
