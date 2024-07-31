@@ -148,6 +148,7 @@ main {
 .title-inner > h1 {
     font-weight: 300;
     letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
 .title-inner > p {
