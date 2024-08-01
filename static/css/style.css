@@ -14,6 +14,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    height: 50px;
 }
 
 .inner-header {
@@ -129,45 +130,99 @@ span {
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
-.title {
-    display: flex;
-    margin-top: 300px;
+.zone {
+    height: 500px;
+    position: relative;
 }
 
-.aside-line {
-    background-color: #333;
-    width: 2px;
-    height: 200px;
-    margin-left: 60px;
-    margin-top: 10px;
+.inner-zone {
+    position: relative;
+    height: 500px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
 }
 
-.title-inner > h1 {
+.text-left {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 100px;
+    top: 170px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 2px solid #333;
+    color: #333;
+}
+
+.text-left > h2 {
     font-weight: 300;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-.title-inner > p {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 2px;
-    margin-left: 10px;
-    margin-top: -10px;
 }
 
 .img {
-    position: absolute;
-    width: 600px;
+    width: 500px;
     height: 500px;
-    z-index: 98;
-    background-image: url(../assets/images/temp-pic.webp);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin-left: 150px;
-    margin-top: -150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.small-text-left {
+    display: none;
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    top: 0;
+}
+
+.small-text-left > h2 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.small-text-left > p {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.img-small {
+    display: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+@media only screen and (max-width: 950px) {
+    .inner-zone {
+        width: 100%;
+    }
+
+    .img {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .small-text-left {
+        display: flex;
+    }
+
+    .img-small {
+        display: block;
+    }
+
+    .text-left {
+        display: none;
+    }
+
+    .img {
+        display: none;
+    }
 }
