@@ -325,3 +325,29 @@ main {
         position: relative;
     }
 }
+
+.contact-zone {
+    background-color: red;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#contact {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 830px) {
+    .contact-zone {
+        position: absolute;
+        bottom: 0;
+        top: 240px;
+        width: 80%;
+        object-fit: cover;
+        left: 10%;
+        right: auto;
+        padding-top: 50px;
+    }
+}
