@@ -5,6 +5,18 @@ header {
     color: #333;
 }
 
+.social {
+    color: #333;
+    font-size: 30px;
+    position: relative;
+    right: 30px;
+    top: 6px;
+}
+
+.social > i {
+    margin-left: 30px;
+}
+
 .outer-header {
     z-index: 99;
     display: flex;
@@ -133,100 +145,60 @@ main {
     margin-top: 150px;
 }
 
-.zone {
-    height: 500px;
+.home-content {
+    height: 450px;
+    width: 800px;
     position: relative;
-}
-
-.inner-zone {
-    position: relative;
-    height: 500px;
-    width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
+    margin-bottom: 100px;
 }
 
-.text-left {
-    font-family: "Poppins", sans-serif;
-    position: absolute;
-    left: 100px;
-    top: 170px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-right: 2px solid #333;
-    color: #333;
-}
-
-.text-left > h2 {
-    font-weight: 300;
-}
-
-.img {
-    width: 500px;
-    height: 500px;
+.home-img {
+    width: 450px;
+    height: 450px;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.small-text-left {
-    display: none;
-    font-family: "Poppins", sans-serif;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+.home-content-text {
     position: absolute;
-    top: 0;
+    height: 200px;
+    left: 50px;
+    top: 125px;
+    padding-right: 40px;
+    border-right: 2px solid #333;
 }
 
-.small-text-left > h2 {
-    font-weight: 300;
-    font-size: 20px;
+.home-content-text-small {
+    display: flex;
+    justify-content: space-around;
 }
 
-.small-text-left > p {
-    margin-top: 20px;
-    margin-left: 30px;
-}
-.img-small {
-    display: none;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    object-fit: cover;
-    max-height: 400px;
-}
-
-@media only screen and (max-width: 950px) {
-    .inner-zone {
+@media only screen and (max-width: 830px) {
+    .home-content {
+        height: 600px;
         width: 100%;
+        position: relative;
     }
 
-    .img {
-        margin-right: 20px;
+    .home-img {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        width: 80%;
+        object-fit: cover;
+        left: 10%;
+        right: auto;
+        padding-top: 50px;
     }
 
-    .text-left {
-        left: 140px;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    .small-text-left {
-        display: flex;
-    }
-
-    .img-small {
-        display: block;
-    }
-
-    .text-left {
-        display: none;
-    }
-
-    .img {
-        display: none;
+    .home-content-text {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        left: 10%;
+        height: 150px;
     }
 }
