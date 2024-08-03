@@ -18,7 +18,7 @@ body {
 }
 
 .social i {
-    margin-left: 30px;
+    margin-left: 18px;
     color: #333;
 }
 
@@ -309,4 +309,19 @@ main {
 
 .about-text a:hover {
     color: black;
+}
+
+@media only screen and (max-width: 830px) {
+    .about-text {
+        position: relative;
+        width: 85%;
+    }
+
+    #about-second {
+        margin-top: -70px;
+    }
+
+    .img-about {
+        position: relative;
+    }
 }
