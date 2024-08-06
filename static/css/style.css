@@ -133,7 +133,7 @@ li > a:hover {
     text-decoration: underline;
 }
 
-span {
+.nav-arrow {
     position: absolute;
     right: 20px;
 }
@@ -187,11 +187,28 @@ main {
     justify-content: space-around;
 }
 
+.typed-replaced {
+    text-align: left;
+    justify-content: left;
+    position: relative;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.typed {
+    display: none;
+}
+
 @media only screen and (max-width: 830px) {
+    .typed {
+        display: block;
+    }
+    
     .home-content {
         height: 600px;
         width: 100%;
         position: relative;
+        top: -150px;
     }
 
     .home-img {
@@ -203,6 +220,7 @@ main {
         left: 10%;
         right: auto;
         padding-top: 50px;
+        top: 80px;
     }
 
     .home-content-text {
@@ -213,6 +231,11 @@ main {
         height: 150px;
         border-right: 2px solid #fff;
     }
+
+    .home-content-text > p {
+        display: none;
+    }
+
 }
 
 .film-title {
@@ -349,4 +372,49 @@ main {
         left: 10%;
         right: auto;
     }
+
+    .about-text > .about-p,  .home-content-text > .contact-p {
+        display: block;
+    }
+
+    #about-second {
+        top: 0;
+        margin-bottom: 200px;
+    }
+
+
+    .img-about {
+        margin-top: -50px;
+    }
+
+}
+
+#about-second {
+    margin-top: -10px;
+}
+
+
+footer {
+    z-index: 99;
+    width: 100%;
+    height: 50px;
+    border-top: solid 2px #333;
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.home-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+footer > p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.home-content {
+    height: 50vh;
+    margin-top: 25vh;
 }
