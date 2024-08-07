@@ -317,6 +317,7 @@ main {
     .film-title {
         margin-left: 5%;
     }
+
 }
 
 .about-text {
@@ -417,4 +418,20 @@ footer > p {
 .home-content {
     height: 50vh;
     margin-top: 25vh;
+}
+
+@media only screen and (max-width: 831px) {
+    .about-footer {
+        margin-top: 300px;
+    }
+
+    #about {
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (max-width: 313px) {
+    #about-2 {
+        margin-top: 200px;
+    }
 }
