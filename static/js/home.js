@@ -12,7 +12,7 @@ function setupTypedReplace() {
       backDelay: 1000,
       loop: true,
       smartBackspace: false,
-      cursorChar: '|',
+      cursorChar: '',
       attr: null
     };
   
