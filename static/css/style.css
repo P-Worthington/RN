@@ -439,3 +439,29 @@ footer > p {
         height: 300px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .home-content-text {
+        margin-top: 50px;
+    }
+
+    .home-img {
+        margin-top: 40px;
+    }
+
+    #about, #about-2 {
+        top: 100px;
+    }
+
+    .img-about {
+        top: 0;
+    }
+
+    .about-footer {
+        margin-top: 400px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
