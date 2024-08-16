@@ -348,15 +348,30 @@ main {
     .img-about {
         position: relative;
     }
+
+    #contact {
+        top: 100px;
+    }
+
+    .contact-zone {
+        margin-top: -500px;
+    }
+
+    #contact-outer {
+        margin-top: 50px;
+    }
 }
 
 .contact-zone {
-    background-color: red;
     width: 450px;
-    height: 450px;
+    height: 350px;
     position: absolute;
     right: 0;
-    top: 0;
+}
+
+form > input, form > textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #contact {
@@ -386,6 +401,10 @@ main {
 
     .img-about {
         margin-top: -50px;
+    }
+
+    .contact-zone {
+        margin-top: 0;
     }
 
 }
