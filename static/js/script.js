@@ -1,5 +1,6 @@
-function changeMenu(x) {
-    x.classList.toggle("change");
+function changeMenu() {
+    var y = document.getElementById("burgerIcon")
+    y.classList.toggle("change");
 }
 
 $(document).ready(function(){
@@ -25,3 +26,11 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
 }
 
+window.onscroll = () => {
+    x = document.getElementsByClassName("change").length
+    if (x === 1) {
+        var y = document.getElementById("burgerIcon")
+        y.classList.remove("change");
+        $("#navContainer").slideToggle(200);
+    } 
+}
