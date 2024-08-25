@@ -236,6 +236,22 @@ main {
         display: none;
     }
 
+    .about-cont {
+        bottom: 10px;
+    }
+
+    .img-about {
+        width: 80%;
+        height: 300px;
+        object-fit: contain;
+        margin-top: 50px;
+
+    }
+
+    .about-foot {
+        position: absolute;
+    }
+
 }
 
 .film-title {
