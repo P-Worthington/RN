@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 
 function sendMail(contactForm) {
-    emailjs.send("service_99ruim5", "template_kmhavzi", {
+    emailjs.send("service_qnoe5p7", "template_t75p7oo", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "project_request": contactForm.projectsummary.value
