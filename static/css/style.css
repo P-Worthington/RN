@@ -468,6 +468,19 @@ footer {
     #about {
         margin-top: -50px;
     }
+
+    #success-modal {
+        position: absolute;
+        top: -50px;
+
+    }
+}
+
+@media only screen and (min-width: 831px) {
+    #success-modal {
+        position: absolute;
+        top: 85px;
+    }
 }
 
 @media only screen and (max-width: 313px) {
@@ -504,4 +517,8 @@ footer {
     iframe {
         height: 250px;
     }
+}
+
+#success-modal {
+    display: none;
 }

@@ -23,6 +23,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script src="https://kit.fontawesome.com/83eae7a1c8.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+        publicKey: "Ba09y4j2fkhv_uCLz",
+      });
+    })();
+</script>
 </head>
 <body>
     <header>
@@ -67,20 +78,24 @@
             <div class="home-content-text about-text" id="contact">
                 <h2>Contact Me</h2>
                 <p class="about-p">email@email.com</p>
-                <p class="about-p">Number if you want or whatever</p>
             </div>
 
             <div class="contact-zone">
                 <div class="center-form">
-                    <form onsubmit="return sendMail(this);">
+                    <form onsubmit="return sendMail(this);" id="form">
                         <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                         <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                         <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
                         <button type="submit" class="btn btn-secondary center-block">Contact Me</button>
                     </form>
+
+                    <div class="center-form" id="success-modal">
+                        <P>Thank you for your email. I will be in touch shortly. </P>
+                    </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <div class="pho-foot-alt"></div>
